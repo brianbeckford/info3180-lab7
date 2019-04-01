@@ -60,7 +60,7 @@ const Upload = Vue.component('upload-form',{
     methods: {
         UploadForm: function(){
             let self = this
-            let uploadForm = document.getElementById('UploadForm');
+            let uploadForm = document.getElementById('uploadForm');
             let form_data = new FormData(uploadForm);
             
             fetch("/api/upload", {
